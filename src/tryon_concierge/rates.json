@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "version": "2026-05-24",
+    "source": "estimated from Perfect Corp YouCam API hackathon credit (1000 units), unit-per-call placeholder",
+    "fallback_unit_cost": 1
+  },
+  "skin_analysis": 1,
+  "ai_makeup_transfer": 2,
+  "makeup_transfer": 2,
+  "hairstyle": 3,
+  "ai_hairstyle": 3,
+  "hair_color": 2,
+  "face_swap": 4,
+  "image_enhance": 1,
+  "background_remove": 1,
+  "earrings_tryon": 2,
+  "lipstick_tryon": 1,
+  "eyebrow_tryon": 1
+}

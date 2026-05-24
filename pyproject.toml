@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tryon-concierge"
+version = "0.1.0"
+description = "Chat-style AI concierge that turns a free-form style request into a sequence of Perfect Corp YouCam API calls plus a side-by-side before/after gallery."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Mukunda Katta", email = "mukunda.vjcs6@gmail.com" },
+]
+keywords = ["llm", "agent", "perfect-corp", "youcam", "virtual-try-on", "beauty"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "gradio>=4",
+    "pillow>=10",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+]
+
+[project.urls]
+Homepage = "https://github.com/MukundaKatta/perfectcorp-tryon-concierge"
+Repository = "https://github.com/MukundaKatta/perfectcorp-tryon-concierge"
+Issues = "https://github.com/MukundaKatta/perfectcorp-tryon-concierge/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
